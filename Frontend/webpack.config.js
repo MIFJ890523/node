@@ -53,7 +53,7 @@ module.exports = {
 	devtool: process.env.NODE_ENV == 'production' ? "source-map" : "cheap-module-eval-source-map",
 	output: {
 		path: path.join(__dirname, 'dist'),
-		publicPath: "/"+process.env.APP+"/",
+		publicPath: "/",
 		filename: 'bundle.js',
 		chunkFilename: "[id].[chunkhash].js"
 	},

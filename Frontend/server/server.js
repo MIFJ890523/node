@@ -16,7 +16,7 @@ app.use(cors())
 
 const routerApi = express.Router()
 
-app.use("/"+process.env.APP+"/api", routerApi)
+app.use("/api", routerApi)
 
 routerApi.use((req, res, next) => {
 
